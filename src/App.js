@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import Card from "../components/Card/Card";
 
-import styles from "./App.module.css";
+import * as styles from "./App.module.css";
 
 const array = [
   { value: 1, flipped: false },

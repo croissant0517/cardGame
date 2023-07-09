@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import styles from "./Card.module.css";
+import * as styles from "./Card.module.css";
 
 const Card = ({ item, onClick, index }) => {
   const handleClick = () => {
