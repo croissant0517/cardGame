@@ -2,20 +2,17 @@ import { useState } from "react";
 
 import styles from "./Card.module.css";
 
-const Card = ({ children }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-
+const Card = ({ item, onClick, index }) => {
   const handleClick = () => {
-    console.log(children);
-    setIsFlipped(!isFlipped);
+    onClick(index);
   };
 
   return (
     <div
-      className={`${styles.card} ${isFlipped ? styles.flipped : ""}`}
+      className={`${styles.card} ${item.flipped ? styles.flipped : ""}`}
       onClick={handleClick}
     >
-      <div className={styles.cardContent}>{children}</div>
+      <div className={styles.cardContent}>{item.value}</div>
     </div>
   );
 };
