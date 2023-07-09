@@ -1,0 +1,4 @@
+# cardGame
+
+### `yarn`
+### `yarn start`
